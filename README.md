@@ -50,7 +50,6 @@
 6. mysql -u root -p client_information < client_information.sql / mysql -u root -p face_recognition < face_recognition.sql
 
 Docker를 설치한 뒤 이미지 파일을 만들어야 합니다.
-
 1. curl -fsSL https://get.docker.com/ | sudo sh
 2. sudo usermod -aG docker $USER
 3. sudo init 6
@@ -60,7 +59,7 @@ Docker를 설치한 뒤 이미지 파일을 만들어야 합니다.
 
 ## How to use
 사용 방법은 다음과 같습니다.
-1. 실행시키는데 필요한 모든 패키지들을 설치
+1. **Install** 과정 완료 (**만약 네이버 서버에서 실행 시 1번 과정을 생략해도됨**)
 2. server 파일 내에 있는 serverController.js( **node serverController.js** )를 실행시킨 뒤 client의 스마트폰에서 해당 앱을 실행
 3. 관리자 모드를 사용하고 싶을 때는 스마트폰 화면을 지속적으로 누르면 웹사이트 주소를 알려줌. 이 때, 이 주소로 접속하면 관리자 모드를 사용할 수 있음
 
