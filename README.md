@@ -40,15 +40,23 @@
 ![-](https://user-images.githubusercontent.com/46180332/50538322-1cb12880-0bb1-11e9-98c5-a4c7cb09e822.gif)
 
 ## Install
-다음과 같은 패키지를 설치를 해야 작동을 합니다.
-
-#### [face-recognition](https://github.com/justadudewhohacks/face-recognition.js)
-
+먼저 mysql를 설치하고 설정해야합니다.
 #### [mysql](https://github.com/mysqljs/mysql)
+1. apt-get update
+2. apt-get install mysql-server
+3. cd sever
+4. mysql 접속
+5. create database client_information / create database face_recognition // 데이터 베이스 생성
+6. mysql -u root -p client_information < client_information.sql / mysql -u root -p face_recognition < face_recognition.sql
 
-#### [request](https://github.com/request/request)
+Docker를 설치한 뒤 이미지 파일을 만들어야 합니다.
 
-#### [websocket](https://github.com/theturtle32/WebSocket-Node)
+1. curl -fsSL https://get.docker.com/ | sudo sh
+2. sudo usermod -aG docker $USER
+3. sudo init 6
+4. docker version
+5. docker build -t server .
+6. docker images
 
 ## How to use
 사용 방법은 다음과 같습니다.
