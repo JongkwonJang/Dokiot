@@ -1,4 +1,4 @@
-# Dokiot (장종권, 원경필, 양희규, 유한상)
+# Dokiot
 실시간 다중 얼굴인식을 위한 Docker 기반 플랫폼
 
 * [Introduction](#introduction)
